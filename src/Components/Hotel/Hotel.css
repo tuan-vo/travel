@@ -1,0 +1,134 @@
+:root {
+  --PrimaryColor: hsl(199, 100%, 33%);
+  --SecondaryColor: hsl(187, 85%, 43%);
+  --gradientColor: linear-gradient(to right, hsl(187,85%,43%),hsl(199,100%,33%));
+  --whiteColor: hsl(0,0%,100%);
+  --blackColor: hsl(201,33%,16%);
+  --textColor: hsl(240, 4%, 36%);
+  --whiteColorDeam: hsl(0,0%,93%);
+  --greyText: rgb(190,190,190);
+  --inputColor: rgb(239,239,239);
+  --bodyColor:rgb(240, 240, 246);
+  --cardBG:rgb(225,225,235);
+}
+
+.HTSection video {
+  height: 65vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.HTSection .container {
+  padding: 2rem 0;
+}
+.HTSection .container h1 {
+  margin: 1rem 0;
+}
+.HTSection .container hr {
+  margin: 1rem 0;
+  color: var(--greyText);
+}
+.HTSection .container .title {
+  position: relative;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  color: var(--textColor);
+  margin: 1rem 0;
+  z-index: 2;
+}
+.HTSection .container .title::after {
+  position: absolute;
+  content: "";
+  background: var(--SecondaryColor);
+  height: 5px;
+  right: 0;
+  bottom: -6px;
+  z-index: -1;
+}
+.HTSection .container .title.sale::after {
+  width: 136px;
+}
+.HTSection .container .title.best::after {
+  width: 107px;
+}
+.HTSection .container .secHotel {
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 5rem;
+}
+.HTSection .container .secHotel .singleHotel {
+  height: 100%;
+  display: grid;
+  row-gap: 10px;
+  align-items: center;
+}
+.HTSection .container .secHotel .singleHotel .box {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+.HTSection .container .secHotel .singleHotel .box .overlay {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 0;
+  display: none;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.HTSection .container .secHotel .singleHotel .box:hover .overlay {
+  top: 0;
+  display: block;
+}
+.HTSection .container .secHotel .singleHotel .box .imgHotel {
+  height: 100%;
+  width: 100%;
+}
+.HTSection .container .secHotel .singleHotel .box .contentHotel {
+  position: absolute;
+  width: 100%;
+  bottom: 10%;
+  padding: 0 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--whiteColor);
+  text-align: center;
+  z-index: 1;
+}
+.HTSection .container .secHotel .singleHotel .box .contentHotel .titleHotel {
+  margin-bottom: 0.5rem;
+}
+.HTSection .container .secHotel .singleHotel .box .contentHotel .priceHotel b {
+  font-size: 1.2rem;
+  color: gold;
+}
+
+@media screen and (min-width: 500px) {
+  .title {
+    font-size: 1.5rem;
+  }
+  .title::after {
+    width: 155px in !important;
+  }
+  .secContent {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .secContent .singleDestination {
+    height: auto;
+  }
+}
+@media screen and (min-width: 840px) {
+  .secHotel {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .secHotel .singleHotel {
+    height: auto;
+  }
+}/*# sourceMappingURL=Hotel.css.map */

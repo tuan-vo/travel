@@ -1,0 +1,58 @@
+:root{
+    --PrimaryColor: hsl(199, 100%, 33%);
+    --SecondaryColor: hsl(187, 85%, 43%);
+    --gradientColor: linear-gradient(to right, hsl(187,85%,43%),hsl(199,100%,33%));
+    --whiteColor: hsl(0,0%,100%);
+    --blackColor: hsl(201,33%,16%);
+    --textColor: hsl(240, 4%, 36%);
+    --whiteColorDeam: hsl(0,0%,93%);
+    --greyText: rgb(190,190,190);
+    --inputColor: rgb(239,239,239);
+    --bodyColor:rgb(240, 240, 246);
+    --cardBG:rgb(225,225,235);
+}
+.DHSection{
+    padding: 2rem 0;
+    .container{
+        .wrap-main{
+            margin: 2rem 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            .img{
+                flex: 1 1 40rem;
+                border: 1px solid #ccc;
+                padding: 0.5rem;
+                img{
+
+                }
+            }
+            .box{
+                flex: 1 1 15rem;
+                background-color: rgb(228, 227, 227);
+                height: 100%;
+                padding: 1.5rem;
+                ul{
+                    line-height: 1.7;
+                    li{
+                        display: flex;
+                        .title{
+                            font-size: 1rem;
+                            min-width: 150px;
+                        }
+                        p{
+
+                        }
+                    }
+                }
+                .btn{
+                    color: white;
+                    border-radius: 3px;
+                    text-align: center;
+                    display: block;
+                    margin-top:1rem ;
+                }
+            }
+        }
+    }
+}

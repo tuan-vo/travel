@@ -1,0 +1,80 @@
+:root {
+  --PrimaryColor: hsl(199, 100%, 33%);
+  --SecondaryColor: hsl(187, 85%, 43%);
+  --gradientColor: linear-gradient(to right, hsl(187, 85%, 43%), hsl(199, 100%, 33%));
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(201, 33%, 16%);
+  --textColor: hsl(240, 4%, 36%);
+  --whiteColorDeam: hsl(0, 0%, 93%);
+  --greyText: rgb(190, 190, 190);
+  --inputColor: rgb(239, 239, 239);
+  --bodyColor: rgb(240, 240, 246);
+  --cardBG: rgb(225, 225, 235);
+}
+
+.DDSection {
+  padding: 2rem 0;
+}
+.DDSection .container .title-dd {
+  margin: 1rem 0;
+}
+.DDSection .container .wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+.DDSection .container .wrap .main-dd {
+  flex: 1 1 45rem;
+}
+.DDSection .container .wrap .main-dd img {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+}
+.DDSection .container .wrap .main-dd .content {
+  font-size: 0.9rem;
+  padding: 1rem 0;
+}
+.DDSection .container .wrap .sidebar {
+  flex: 1 1 10rem;
+}
+.DDSection .container .wrap .sidebar .boxDetail {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+.DDSection .container .wrap .sidebar .boxDetail ul li {
+  display: flex;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  display: inline-table;
+  width: 100%;
+  border-bottom: solid 1px rgba(0, 0, 0, 0.15);
+}
+.DDSection .container .wrap .sidebar .boxDetail ul li:last-child {
+  border-bottom: none;
+}
+.DDSection .container .wrap .sidebar .boxDetail ul li p {
+  display: block;
+  float: left;
+}
+.DDSection .container .wrap .sidebar .boxDetail ul li .sidebar-title {
+  font-weight: 500;
+  width: 120px;
+}
+.DDSection .container .wrap .sidebar .boxPrice {
+  margin: 2rem 0;
+  padding: 2rem;
+  background-color: var(--cardBG);
+  text-align: center;
+}
+.DDSection .container .wrap .sidebar .boxPrice .price {
+  color: var(--PrimaryColor);
+}
+.DDSection .container .wrap .sidebar .boxPrice .booking {
+  display: block;
+  width: 100%;
+  color: var(--whiteColor);
+  border-radius: 5px;
+  margin-top: 1rem;
+}/*# sourceMappingURL=DetailDestination.css.map */

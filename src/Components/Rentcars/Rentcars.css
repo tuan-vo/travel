@@ -1,0 +1,62 @@
+:root {
+  --PrimaryColor: hsl(199, 100%, 33%);
+  --SecondaryColor: hsl(187, 85%, 43%);
+  --gradientColor: linear-gradient(to right, hsl(187,85%,43%),hsl(199,100%,33%));
+  --whiteColor: hsl(0,0%,100%);
+  --blackColor: hsl(201,33%,16%);
+  --textColor: hsl(240, 4%, 36%);
+  --whiteColorDeam: hsl(0,0%,93%);
+  --greyText: rgb(190,190,190);
+  --inputColor: rgb(239,239,239);
+  --bodyColor:rgb(240, 240, 246);
+  --cardBG:rgb(225,225,235);
+}
+
+.RCSection video {
+  height: 65vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.RCSection h1 {
+  margin: 1rem 0;
+}
+.RCSection .container form {
+  width: 90%;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  box-shadow: 0 0 1px #ccc;
+  margin: 3rem auto;
+  padding: 3rem 2rem;
+  background-color: white;
+}
+.RCSection .container form h1 {
+  text-align: center;
+}
+.RCSection .container form .box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+.RCSection .container form .box .wrap-input {
+  flex: 1 1 20rem;
+}
+.RCSection .container form .box .wrap-input label {
+  display: block;
+}
+.RCSection .container form .box .wrap-input .ip {
+  width: 100%;
+  border: 1px solid #ccc;
+  outline: none;
+  padding: 0.7rem 0.6rem;
+  margin-top: 0.3rem;
+}
+.RCSection .container form .btn {
+  display: block;
+  min-width: 200px;
+  color: var(--whiteColor);
+  border-radius: 5px;
+  margin-top: 1rem;
+  text-transform: uppercase;
+  margin: 1rem auto 0;
+}/*# sourceMappingURL=Rentcars.css.map */

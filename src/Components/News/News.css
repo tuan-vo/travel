@@ -1,0 +1,72 @@
+:root {
+  --PrimaryColor: hsl(199, 100%, 33%);
+  --SecondaryColor: hsl(187, 85%, 43%);
+  --gradientColor: linear-gradient(to right, hsl(187,85%,43%),hsl(199,100%,33%));
+  --whiteColor: hsl(0,0%,100%);
+  --blackColor: hsl(201,33%,16%);
+  --textColor: hsl(240, 4%, 36%);
+  --whiteColorDeam: hsl(0,0%,93%);
+  --greyText: rgb(190,190,190);
+  --inputColor: rgb(239,239,239);
+  --bodyColor:rgb(240, 240, 246);
+  --cardBG:rgb(225,225,235);
+}
+
+.Nsection {
+  padding: 2rem 0;
+}
+.Nsection .container .contentmain {
+  margin: 1rem 0;
+}
+.Nsection .container hr {
+  margin: 1rem 0;
+}
+.Nsection .container .grid {
+  gap: 1.5rem;
+}
+.Nsection .container .grid .boxNew {
+  width: 100%;
+  overflow: hidden;
+  max-height: 380px;
+}
+.Nsection .container .grid .boxNew h3 a {
+  color: inherit;
+}
+.Nsection .container .grid .boxNew h3 a:hover {
+  color: rgb(51, 51, 51);
+}
+.Nsection .container .grid .boxNew .img {
+  display: block;
+  overflow: hidden;
+}
+.Nsection .container .grid .boxNew .img img {
+  transition: 1s;
+}
+.Nsection .container .grid .boxNew .img:hover img {
+  transform: scale(1.1);
+}
+.Nsection .container .grid .boxNew .tools {
+  display: flex;
+  gap: 2rem;
+  font-size: 0.8rem;
+  color: var(--textColor);
+  padding: 3px 20px;
+  justify-content: space-between;
+}
+.Nsection .container .grid .boxNew .tools p {
+  display: block;
+}
+.Nsection .container .grid .boxNew .content {
+  font-size: 0.9rem;
+}
+
+@media screen and (min-width: 500px) {
+  .Nsection .grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+@media screen and (min-width: 840px) {
+  .Nsection .grid {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+}/*# sourceMappingURL=News.css.map */

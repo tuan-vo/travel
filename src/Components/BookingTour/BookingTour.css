@@ -1,0 +1,52 @@
+:root {
+  --PrimaryColor: hsl(199, 100%, 33%);
+  --SecondaryColor: hsl(187, 85%, 43%);
+  --gradientColor: linear-gradient(to right, hsl(187, 85%, 43%), hsl(199, 100%, 33%));
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(201, 33%, 16%);
+  --textColor: hsl(240, 4%, 36%);
+  --whiteColorDeam: hsl(0, 0%, 93%);
+  --greyText: rgb(190, 190, 190);
+  --inputColor: rgb(239, 239, 239);
+  --bodyColor: rgb(240, 240, 246);
+  --cardBG: rgb(225, 225, 235);
+}
+
+.form-booking-tour {
+  margin: 5rem 0;
+}
+.form-booking-tour h1 {
+  text-align: center;
+}
+.form-booking-tour form .box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  font-size: 1rem;
+}
+.form-booking-tour form .box .wrap-input {
+  flex: 1 1 20rem;
+}
+.form-booking-tour form .box .wrap-input label {
+  display: block;
+}
+.form-booking-tour form .box .wrap-input .ip {
+  width: 100%;
+  border: 1px solid #ccc;
+  outline: none;
+  padding: 0.7rem 0.6rem;
+  color: var(--textColor);
+  margin-top: 0.3rem;
+}
+.form-booking-tour form h3 {
+  text-align: end;
+  color: var(--PrimaryColor);
+}
+.form-booking-tour form .btn {
+  display: block;
+  float: right;
+  margin: auto;
+  color: var(--whiteColor);
+  border-radius: 5px;
+  margin-top: 1rem;
+}/*# sourceMappingURL=BookingTour.css.map */

@@ -1,0 +1,74 @@
+:root {
+  --PrimaryColor: hsl(199, 100%, 33%);
+  --SecondaryColor: hsl(187, 85%, 43%);
+  --gradientColor: linear-gradient(to right, hsl(187,85%,43%),hsl(199,100%,33%));
+  --whiteColor: hsl(0,0%,100%);
+  --blackColor: hsl(201,33%,16%);
+  --textColor: hsl(240, 4%, 36%);
+  --whiteColorDeam: hsl(0,0%,93%);
+  --greyText: rgb(190,190,190);
+  --inputColor: rgb(239,239,239);
+  --bodyColor:rgb(240, 240, 246);
+  --cardBG:rgb(225,225,235);
+}
+
+.CSection {
+  width: 100%;
+  background-image: url(https://firebasestorage.googleapis.com/v0/b/travel-2022-686cf.appspot.com/o/images%2Fbg-contact.jpg?alt=media&token=1ffb6155-6919-429f-bd36-7c876e1463b5);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 10rem 0;
+}
+.CSection .wrap-form {
+  max-width: 1200px;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgba(255, 255, 255, 0.85);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 3rem;
+}
+.CSection .wrap-form .left {
+  flex: 1 1 30rem;
+  text-align: center;
+}
+.CSection .wrap-form .left h1 {
+  padding: 1rem;
+  font-size: 2rem;
+}
+.CSection .wrap-form .left img {
+  width: 90%;
+}
+.CSection .wrap-form .right {
+  flex: 1 1 20rem;
+}
+.CSection .wrap-form .right .box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+.CSection .wrap-form .right .box .wrap-input {
+  flex: 1 1 20rem;
+}
+.CSection .wrap-form .right .box .wrap-input label {
+  display: block;
+}
+.CSection .wrap-form .right .box .wrap-input .ip {
+  width: 100%;
+  border: 1px solid #ccc;
+  outline: none;
+  padding: 0.7rem 0.6rem;
+  margin-top: 0.3rem;
+}
+.CSection .wrap-form .right .btn {
+  display: block;
+  float: right;
+  min-width: 200px;
+  margin: auto;
+  color: var(--whiteColor);
+  border-radius: 5px;
+  margin-top: 1rem;
+  text-transform: uppercase;
+}/*# sourceMappingURL=Contact.css.map */

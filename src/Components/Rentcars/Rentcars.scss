@@ -1,0 +1,65 @@
+:root{
+    --PrimaryColor: hsl(199, 100%, 33%);
+    --SecondaryColor: hsl(187, 85%, 43%);
+    --gradientColor: linear-gradient(to right, hsl(187,85%,43%),hsl(199,100%,33%));
+    --whiteColor: hsl(0,0%,100%);
+    --blackColor: hsl(201,33%,16%);
+    --textColor: hsl(240, 4%, 36%);
+    --whiteColorDeam: hsl(0,0%,93%);
+    --greyText: rgb(190,190,190);
+    --inputColor: rgb(239,239,239);
+    --bodyColor:rgb(240, 240, 246);
+    --cardBG:rgb(225,225,235);
+}
+.RCSection{
+    video{
+        height: 65vh;
+        object-fit: cover;
+    }
+    h1{
+        margin: 1rem 0;
+    }
+    .container{
+        form{
+            width: 90%;
+            border: 1px solid #ccc;
+            border-radius: 2px;
+            box-shadow: 0 0 1px #ccc;
+            margin: 3rem auto;
+            padding: 3rem 2rem;
+            background-color: white;
+            h1{
+                text-align: center;
+            }
+            .box{
+                display: flex;
+                flex-wrap: wrap;
+                gap: 1.5rem;
+                margin-top: 2rem;
+                .wrap-input{
+                    flex: 1 1 20rem;
+                    label{
+                        display: block;
+                    }
+                    .ip{
+                        width: 100%;
+                        border: 1px solid #ccc;
+                        outline: none;
+                        padding: 0.7rem 0.6rem;
+                        margin-top: 0.3rem;
+                    }
+                    
+                }
+            }
+            .btn {
+                display: block;
+                min-width: 200px;
+                color: var(--whiteColor);
+                border-radius: 5px;
+                margin-top: 1rem;
+                text-transform: uppercase;
+                margin: 1rem auto 0;
+            }
+        }
+    }
+}

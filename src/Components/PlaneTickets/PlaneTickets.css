@@ -1,0 +1,40 @@
+:root {
+  --PrimaryColor: hsl(199, 100%, 33%);
+  --SecondaryColor: hsl(187, 85%, 43%);
+  --gradientColor: linear-gradient(to right, hsl(187,85%,43%),hsl(199,100%,33%));
+  --whiteColor: hsl(0,0%,100%);
+  --blackColor: hsl(201,33%,16%);
+  --textColor: hsl(240, 4%, 36%);
+  --whiteColorDeam: hsl(0,0%,93%);
+  --greyText: rgb(190,190,190);
+  --inputColor: rgb(239,239,239);
+  --bodyColor:rgb(240, 240, 246);
+  --cardBG:rgb(225,225,235);
+}
+
+.PTSection video {
+  height: 65vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.PTSection .container {
+  padding: 2rem 0;
+  padding-bottom: 80vh;
+}
+.PTSection .container h1 {
+  margin: 1rem 0;
+}
+.PTSection .container div {
+  margin-top: 1rem;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.PTSection .container div a.flex {
+  color: black;
+}
+.PTSection .container div a.flex .icon {
+  margin-right: 0.5rem;
+}
+.PTSection .container .btn {
+  color: var(--whiteColor);
+}/*# sourceMappingURL=PlaneTickets.css.map */
