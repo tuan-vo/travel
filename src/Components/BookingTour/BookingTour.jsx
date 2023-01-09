@@ -99,7 +99,6 @@ export default class BookingTour extends Component {
                     <h3>Tổng giá tiền: {new Intl.NumberFormat().format(this.state.sumPrice)} đ</h3>
                     <input type="submit" className='btn' value="Hoàn Thành" />
                 </form>
-
             </div>
         )
     }
