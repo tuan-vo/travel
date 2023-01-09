@@ -1,1 +1,18 @@
-/*# sourceMappingURL=DetailNew.css.map */
+.new__section {
+  padding: 2rem 0;
+}
+.new__section .container .title-dd {
+  margin: 1rem 0;
+}
+.new__section .container .wrap {
+  margin-top: 10px;
+  text-align: center;
+}
+.new__section .container .wrap img {
+  text-align: center;
+  width: 60%;
+}
+.new__section .container .wrap .content {
+  margin-top: 10px;
+  text-align: left;
+}/*# sourceMappingURL=DetailNew.css.map */

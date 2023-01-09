@@ -80,7 +80,7 @@ export default class BookingTour extends Component {
                         </div>
                         <div className="wrap-input">
                             <label>Số điện thoại: *</label>
-                            <input onChange={(event) => { this.isChange(event) }} className='ip' required name='tel' type="tel" />
+                            <input onChange={(event) => { this.isChange(event) }} className='ip' required name='tel' type="tel" minLength={9} maxLength={10} inputmode="numeric" pattern="[0-9]*"/>
                         </div>
                         <div className="wrap-input">
                             <label>Địa chỉ:</label>

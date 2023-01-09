@@ -50,6 +50,14 @@ export default class ContactForm extends Component {
             alert("Bạn đã gửi thông tin phòng thành công")
         }
     }
+     onlyNumberKey(evt) {
+              
+        // Only ASCII character in that range allowed
+        var ASCIICode = (evt.which) ? evt.which : evt.keyCode
+        if (ASCIICode > 31 && (ASCIICode < 48 || ASCIICode > 57))
+            return false;
+        return true;
+    }
   render() {
     // console.log(this.props.id);
     return (
@@ -65,7 +73,7 @@ export default class ContactForm extends Component {
             </div>
             <div className="wrap-input">
                 <label>Số điện thoại: *</label>
-                <input onChange={(event) => { this.isChange(event) }} required className='ip' name='tel' type="text" />
+                <input onChange={(event) => { this.isChange(event) }} required className='ip' name='tel' type="tell" minLength={9} maxLength={10} inputmode="numeric" pattern="[0-9]*"/>
             </div>
             <div className="wrap-input">
                 <label>Địa chỉ: </label>

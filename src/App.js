@@ -18,6 +18,7 @@ import { dataTour,dataHotel, dataBookingTour, dataNews,storage } from './firebas
 import { onValue } from "firebase/database";
 import { ref, uploadBytes, getDownloadURL } from "firebase/storage";
 import { TbEmphasis } from 'react-icons/tb'
+import { DetailNew } from './Components/DetailNew/DetailNew'
 
 
 
@@ -137,6 +138,7 @@ export default class App extends Component {
           <Route path="/khach-san/chi-tiet-:id/dat-phong" element={<Contact title="LIÊN HỆ ĐẶT PHÒNG" img='https://firebasestorage.googleapis.com/v0/b/travel-2022-686cf.appspot.com/o/images%2Fimg-travel-hotel.png?alt=media&token=1c7c2afc-2ce1-418c-a66f-057c9042aadd' data = {this.state.tableDataHotel}></Contact> } />
           <Route path="/thue-xe" element={<Rentcars />} />
           <Route path="/tin-tuc" element={<News data = {this.state.tableDataNews}/>} />
+          <Route path="/tin-tuc/chi-tiet-:id" element={<DetailNew data = {this.state.tableDataNews}/>} />
           <Route path="/gioi-thieu" element={<About />} />
           <Route path="/du-lich/chi-tiet-:id" element={<DetailDestination data={this.state.tableData}  dataBT={this.state.tableDataBookingTour}/>} />
           <Route path="/du-lich/tim-kiem" element={<Search dtsreach={this.state.dataSreach} data={this.state.tableData} dataBT={this.state.tableDataBookingTour}/>} />

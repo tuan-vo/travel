@@ -28,9 +28,11 @@ class Main extends Component {
 
             <div className="secContent grid">
                 {
-                    Data.map(({key,value})=>{
+                    Data.map(({key,value}, i)=>{
                         return(
-                            <div data-aos="fade-up"
+                            <div
+                            key={i}
+                             data-aos="fade-up"
                             className="singleDestination">
                                 <div className="imageDiv">
                                     {/* <img src={img} alt=""/> */}
@@ -53,14 +55,13 @@ class Main extends Component {
                                     <div className="desc">
                                         <p></p>
                                     </div>
-                                    <Link to={"/du-lich/chi-tiet-" + key} className="btn flex">
+                                    <Link to={"/du-lich/chi-tiet-" + key} key={key} className="btn flex">
                                         Chi tiết <HiOutlineClipboardCheck className="icon"/>
                                     </Link>
                                 </div>
                             </div>
                         )
                     })
-                    
                 }
                 
             </div>
